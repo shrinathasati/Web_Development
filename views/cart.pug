@@ -1,0 +1,83 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title RamShyamTraders
+        style
+            include ../static/cartstyle.css
+        
+    body
+        nav#nav
+            img(src="/static/logo.jpg", alt="RamShyamTraders")
+            details 
+                ul
+                    li #[a(href='/') Home]
+                    li #[a(href='/about') About]
+                    li #[a(href='/shop') Shop Now]
+                    li #[a(href='/service') Service]
+                summary Menu
+            div.image
+                a(href='/cart')
+                    img(src="/static/cart.png", alt="Cart",class="cart")
+                a(href='/help')
+                    img(src="/static/help.jpg", alt="Help",class="help")
+        nav#navbar
+            img(src="/static/logo.jpg", alt="RamShyamTraders")
+            ul
+                li #[a(href='/') Home]
+                li #[a(href='/about') About]
+                li #[a(href='/shop') Shop Now]
+                li #[a(href='/service') Service]
+            a(href='/cart')
+                img(src="/static/cart.png", alt="Cart",class="cart")
+            a(href='/help')
+                img(src="/static/help.jpg", alt="Help",class="help")
+        div#container
+            div#cart
+                div.container
+                    h2 Shopping Cart
+                    p Remove all
+                div.box
+                    div.item
+                        img(src="/static/frok.jpg", alt="frok")
+                        div.des
+                            h2 Doll froks for kids-girl
+                            p XS size
+                        div.count
+                            button +
+                            p 2
+                            button -
+                        div.price
+                            h2 498Rs.
+                            p Save for later
+                            p Remove
+                    div.item
+                        img(src="/static/dress3.jpg", alt="kids wear")
+                        div.des
+                            h2 Summer Suit for kids
+                            p S size
+                        div.count
+                            button +
+                            p 1
+                            button -
+                        div.price
+                            h2 698Rs.
+                            p Save for later
+                            p Remove
+            div.down
+                div.bottom 
+                    div.total
+                        h2 Sub total
+                        p 3 items
+                    div.rs
+                        h2 1196Rs.
+                button#checkout CheckOut
+        footer#footer
+            h3 Copyright &copy RamShyamTraders.com|All right revesered.
+        script
+            include ../static/index.js       
+
+
+            

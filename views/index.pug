@@ -1,0 +1,74 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title RamShyamTraders
+        style
+            include ../static/style.css
+        
+    body
+        nav#nav
+            img(src="/static/logo.jpg", alt="RamShyamTraders")
+            details 
+                ul
+                    li #[a(href='/') Home]
+                    li #[a(href='/about') About]
+                    li #[a(href='/shop') Shop Now]
+                    li #[a(href='/service') Service]
+                summary Menu
+            div.image
+                a(href='/cart')
+                    img(src="/static/cart.png", alt="Cart",class="cart")
+                a(href='/help')
+                    img(src="/static/help.jpg", alt="Help",class="help")
+        nav#navbar
+            img(src="/static/logo.jpg", alt="RamShyamTraders")
+            ul
+                li #[a(href='/') Home]
+                li #[a(href='/about') About]
+                li #[a(href='/shop') Shop Now]
+                li #[a(href='/service') Service]
+            a(href='/cart')
+                img(src="/static/cart.png", alt="Cart",class="cart")
+            a(href='/help')
+                img(src="/static/help.jpg", alt="Help",class="help")
+
+        section#introSection
+            h1 Welcome to RamShyamTraders
+            p  Live with the new fashion with us
+            a(href='/shop')
+                button#btn Shop Now
+        section#sponsorsSection
+            h1 Top Trends
+            div.container
+                div.box
+                    h2 Frok
+                    img(src="/static/dress1.jpg", alt="loading...")
+                    p Party wear fashionable girl's wear
+                div.box
+                    h2 Jersey
+                    img(src="/static/dress2.jpg", alt="loading...")
+                    p feel hot in cool season
+                div.box
+                    h2 Suit
+                    img(src="/static/dress3.jpg", alt="loading...")
+                    p Kids full matched clothes
+        section#service
+            h1 Our Services
+            div.part
+                div.part1
+                    img(src="/static/licence.jpg", alt="Licence")
+                    p Best quality
+                div.part1
+                    img(src="/static/shopping.jpg", alt="shopping")
+                    p Online Shopping
+                div.part1
+                    img(src="/static/delivery.jpg", alt="delivery")
+                    p Fastest Home Delivery
+        footer#footer
+            h3 Copyright &copy RamShyamTraders.com|All right revesered.
+        script
+            include ../static/index.js
+        

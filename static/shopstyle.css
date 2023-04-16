@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Lobster&family=Oxygen:wght@300&display=swap');
+*{
+    /* background-color: rgb(247, 197, 197); */
+    padding: 0px;
+    margin: 0px;
+    
+}
+@media (max-width:500px) {
+    #navbar{
+        display: none;
+    }
+    #nav{
+        display: flex;
+        background-color: #b42727;
+        justify-content: space-between;
+    }
+    #nav img{
+        height: 33px;
+        width: 49px;
+        border-radius: 50%;
+        /* padding-top: 2px; */
+    }
+    #nav details{
+        padding-left: 25px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: 2px solid black;
+    }
+    ul li{
+        padding: 2px;
+    }
+    
+    li{
+        padding: 10px 0px;
+        list-style: none;
+    }
+    li a{
+        color: white;
+        /* font-size: 12px; */
+        text-decoration: none;
+    }
+    .image{
+        display: flex;
+        /* padding: 2px; */
+    }
+    .cart{
+        
+        cursor:pointer;
+        /* padding-left: 90px; */
+    }
+    .help{
+        
+        cursor:pointer;
+    }
+    .container{
+        display: none;
+    }
+    #mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid black;
+        background-color: rgb(156, 156, 252);
+        color: black;
+        font-size: 16px;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    
+    #search{
+        display: flex;
+        height: 30px;
+        /* border: 2px solid black; */
+        margin: 5px 0px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    #search input{
+        width: 300px;
+        height: 30px;
+        border-radius: 10px;
+
+    }
+    #search img{
+        height: 30px;
+        width: 30px;
+        background-color: white;  
+        cursor: pointer;
+        border-radius: 10px;
+        
+    }
+    #account{
+        /* margin: 5px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #account img{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+    #footer{
+        color: white;
+        background-color: black;
+        height: 25px;
+        text-align: center;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        margin: 10px;
+    }
+    .item:hover{
+        background-color: rgb(81, 78, 78);
+        color: white;
+    }
+    .item img{
+        padding-top: 35px;
+        padding: 0px 10px;
+        height: 250px;
+        width: 250px;
+        cursor: pointer;
+    }
+    .detail{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:501px){
+    #mobile{
+        display: none;
+    }
+    #nav{
+        display: none;
+    }
+    #navbar{
+        display: flex;
+        justify-content: center;
+        background-color: #b42727;
+        border: 3px solid black;
+    }
+    ul{
+        display: flex;
+        width: 100%;
+        
+        
+        
+    }
+    #navbar img{
+        height: 33px;
+        width: 49px;
+        margin: 12px 12px;
+    }
+    .cart{
+        margin-left:780px;
+        cursor:pointer;
+    }
+    .help{
+        cursor:pointer;
+    }
+    
+    li{
+        font-family: 'Baloo Bhai 2', cursive;
+        list-style: none;
+        padding: 15px 34px;
+    }
+    li a{
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+    #navbar a:hover{
+        color: black;
+    }
+    .container{
+        display: flex;
+        border: 2px solid black;
+        background-color: rgb(156, 156, 252);
+        color: black;
+        font-size: 16px;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    #search{
+        display: flex;
+        padding: 10px 150px;
+        
+    }
+    #search img{
+        border: 2px solid black;
+        height: 20px;
+        width: 20px;
+        padding: 7px;
+        background-color: white;
+        cursor:pointer;
+    }
+    #search input{
+        display: block;
+        width: 865px;
+        border: 2px solid black;
+        /* border-radius: ; */
+        padding: 5px;
+    }
+    .container h3{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    #account{
+        display: flex;
+        padding: 2px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+    #account img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .box{
+        display: grid;
+        grid-gap: 2rem;
+        
+        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid brown;
+        border-radius: 2px;
+        margin: 12px 10px;
+        /* width: 100px; */
+        
+    }
+    .item:hover{
+        background-color: rgb(81, 78, 78);
+        color: white;
+    }
+    .item img{
+        padding-top: 35px;
+        padding-left: 115px;
+        height: 250px;
+        width: 250px;
+        cursor: pointer;
+    }
+    .detail{
+        display: flex;
+        justify-content: space-between;
+    }
+    .price p{
+        cursor: pointer;
+    }
+    .price p:hover{
+        color: blue;
+    }
+    #footer{
+        color: white;
+        background-color: black;
+        height: 25px;
+        text-align: center;
+    }
+}

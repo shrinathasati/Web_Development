@@ -1,0 +1,62 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title RamShyamTraders
+        style
+            include ../static/contactstyle.css
+        
+    body
+        nav#nav
+            img(src="/static/logo.jpg", alt="RamShyamTraders")
+            details 
+                ul
+                    li #[a(href='/') Home]
+                    li #[a(href='/about') About]
+                    li #[a(href='/shop') Shop Now]
+                    li #[a(href='/service') Service]
+                summary Menu
+            div.image
+                a(href='/cart')
+                    img(src="/static/cart.png", alt="Cart",class="cart")
+                a(href='/help')
+                    img(src="/static/help.jpg", alt="Help",class="help")
+        nav#navbar
+            img(src="/static/logo.jpg", alt="RamShyamTraders")
+            ul
+                li #[a(href='/') Home]
+                li #[a(href='/about') About]
+                li #[a(href='/shop') Shop Now]
+                li #[a(href='/service') Service]
+            a(href='/cart')
+                img(src="/static/cart.png", alt="Cart",class="cart")
+            a(href='/help')
+                img(src="/static/help.jpg", alt="Help",class="help")
+        section#help
+            h1 How can we help you?
+            h2 Popular question
+            div.container
+                details
+                    p genrally it's take 2-3 days.
+                    summary How much time to delivery?
+                details
+                    p The rating of product is 4.8.
+                    summary What is the rating of your product.
+                details
+                    p You can return product within 3 days of delivery.
+                    summary Can we replace the product?
+                details
+                    p You can claim 50% off voucher on your first order.
+                    summary What is 50% offer of first order?
+           
+            input(type="text-area" class="query" placeholder="Ask your query here...")
+            div.button
+                button.btn#call Call Us
+                button.btn#mail Mail
+        footer#footer
+            h3 Copyright &copy RamShyamTraders.com|All right revesered.
+        script
+            include ../static/index.js
+            

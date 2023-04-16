@@ -1,0 +1,54 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title RamShyamTraders
+        style
+            include ../static/aboutstyle.css
+        
+    body
+        nav#nav
+            img(src="/static/logo.jpg", alt="RamShyamTraders")
+            details 
+                ul
+                    li #[a(href='/') Home]
+                    li #[a(href='/about') About]
+                    li #[a(href='/shop') Shop Now]
+                    li #[a(href='/service') Service]
+                summary Menu
+            div.image
+                a(href='/cart')
+                    img(src="/static/cart.png", alt="Cart",class="cart")
+                a(href='/help')
+                    img(src="/static/help.jpg", alt="Help",class="help")
+        nav#navbar
+            img(src="/static/logo.jpg", alt="RamShyamTraders")
+            ul
+                li #[a(href='/') Home]
+                li #[a(href='/about') About]
+                li #[a(href='/shop') Shop Now]
+                li #[a(href='/service') Service]
+            a(href='/cart')
+                img(src="/static/cart.png", alt="Cart",class="cart")
+            a(href='/help')
+                img(src="/static/help.jpg", alt="Help",class="help")
+        div.tag
+            h1 Our Mission
+            h3 Our goal to serve you best
+
+        div.container
+            div.part1
+                img(src="/static/clothmill.jpg", alt="Loading...")
+                h3 We always try to provide the best present in the market. The clothes we sell are come from the best mill of the world. We provide the best quality, best design, best satisfaction for our customers.
+            div.part2
+                h3 Our product are also available in market at many shop, shopping-mall. Customer can buy the same product at the same price by visiting the shop nearest to their current location.
+                img(src="/static/clothmall.jpg", alt="Loading...")
+        div.container1
+            div.part1
+                img(src="/static/clothmill.jpg", alt="Loading...")
+                h3 We always try to provide the best present in the market. The clothes we sell are come from the best mill of the world. We provide the best quality, best design, best satisfaction for our customers.
+            div.part2
+                img(src="/static/clothmall.jpg", alt="Loading...")
+                h3 Our product are also available in market at many shop, shopping-mall. Customer can buy the same product at the same price by visiting the shop nearest to their current location.
